@@ -309,7 +309,7 @@ ForEach ($Profile in $ProfileList) {
 	
 	#Interface Key Search
 	$InterfaceKeys = @(Get-Item -Path "registry::HKEY_USERS\$($Profile.SID)\Software\Classes\Interface" -ErrorAction SilentlyContinue | Get-ChildItem)
-	$InterfaceKeys = $CLSIDKeys + @(Get-Item -Path "registry::HKEY_USERS\$($Profile.SID)\Software\Classes\WOW6432Node\Interface" -ErrorAction SilentlyContinue | Get-ChildItem)
+	$InterfaceKeys = $InterfaceKeys + @(Get-Item -Path "registry::HKEY_USERS\$($Profile.SID)\Software\Classes\WOW6432Node\Interface" -ErrorAction SilentlyContinue | Get-ChildItem)
 	
 	ForEach ($InterfaceKey in $InterfaceKeys) {
 		$InterfacePropMatches = @()
