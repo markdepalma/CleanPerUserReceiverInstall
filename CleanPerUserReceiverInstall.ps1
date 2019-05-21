@@ -1,4 +1,9 @@
 $RegistryKeys = "
+Software\Classes\CCMLib.CCM.*
+Software\Classes\Citrix.ICAClient.*
+Software\Classes\Citrix.ICAClientProp.*
+Software\Classes\IcaMimeFilter.IcaMimeFilterPP.*
+Software\Classes\IEInterceptor.InterceptorBHO.*
 Software\Classes\.cr
 Software\Classes\.vfm
 Software\Classes\AppID\{C481B12A-93FC-4D68-9BCD-B68144CC4265}
